@@ -27,7 +27,6 @@ void OnProjectLoad (void) {
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("8 MHz");
   Project.AddPathSubstitute ("C:/pico", "$(ProjectDir)");
-  Project.AddPathSubstitute ("c:/pico", "$(ProjectDir)");
   Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M0.svd");
   Project.AddSvdFile ("C:/pico/rp2040.svd");
   //

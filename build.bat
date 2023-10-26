@@ -9,9 +9,6 @@ set CFLAGS=%CFLAGS% -Wno-unused-function -Wno-unused-variable -Wno-unused-parame
 set CFLAGS=%CFLAGS% -O0 -g3 -ffreestanding -nostdlib
 set CFLAGS=%CFLAGS% -mtune=cortex-m0plus -mcpu=cortex-m0plus -mthumb
 
-set LFLAGS=%LFLAGS% -Wl,-Tboot.ld
-
-arm-none-eabi-gcc boot.c -o boot.elf %CFLAGS% %LFLAGS%
+arm-none-eabi-gcc boot_sram.s main.c -o boot.elf %CFLAGS% -Wl,-Tboot.ld
 tools\makeboot.exe boot.elf
-
-echo Done
+arm-none-eabi-size boot.elf

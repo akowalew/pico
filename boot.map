@@ -1,0 +1,94 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .group         0x00000000        0xc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.glue_7         0x00000000        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000000        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000000        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000000        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.text           0x00000000       0x68
+ .text          0x00000000       0x68 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+                0x00000000                Main
+
+.data           0x00000068        0x0
+ .data          0x00000068        0x0 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.bss            0x00000068        0x0
+ .bss           0x00000068        0x0 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.boot2          0x20041f00      0x100 load address 0x10000000
+                0x20041f00                PROVIDE (__BOOT_START = .)
+ *(.boot2*)
+                0x20041f00                PROVIDE (__BOOT_END = .)
+                0x00000100                . = 0x100
+ *fill*         0x20041f00      0x100 
+                0x00000001                ASSERT (((__BOOT_END - __BOOT_START) < 0xfc), Error)
+OUTPUT(main.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x7536
+ .debug_info    0x00000000     0x7536 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_abbrev   0x00000000      0x14f
+ .debug_abbrev  0x00000000      0x14f C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_aranges  0x00000000       0x20
+ .debug_aranges
+                0x00000000       0x20 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_macro    0x00000000    0x14fcc
+ .debug_macro   0x00000000       0x6c C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x0000006c      0xa78 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000ae4       0x2e C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000b12      0x34e C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000e60       0x1c C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000e7c       0x22 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000e9e       0xd1 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00000f6f      0x4da C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00001449      0x11f C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+ .debug_macro   0x00001568    0x13a64 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_line     0x00000000      0x128
+ .debug_line    0x00000000      0x128 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_str      0x00000000    0x791bc
+ .debug_str     0x00000000    0x791bc C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+                              0x79335 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2c
+ .ARM.attributes
+                0x00000000       0x2c C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o
+
+.debug_frame    0x00000000       0x30
+ .debug_frame   0x00000000       0x30 C:\Users\akowalew\AppData\Local\Temp\cc2whG6j.o

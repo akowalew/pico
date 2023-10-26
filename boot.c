@@ -10,7 +10,7 @@ void BootMain(void)
     while( 1 )
     {
         SIO->GPIO_OUT_XOR = 1 << 25;
-        for( volatile unsigned int a = 5000000; a > 0; a-- )
+        for(volatile unsigned int a = 100000; a > 0; a--)
         {
 
         }
